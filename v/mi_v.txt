@@ -1,0 +1,407 @@
+https://www.facebook.com/groups/elteikbsc/permalink/1310813632347944/
+
+https://elte.sharq.hu/uploads/1299115145vizsgak_mind.txt
+
+090527
+1. Milyen formában jelennek meg az általános keresorendszer komponensei egy gráfkereso algoritmus esetén?
+2. Visszalépéses keresés elso változatának algoritmusa
+3. Általános keresorendszer komponensei
+4. Perceptron modell
+5. Kétszemélyes játék állapottér reprezentációja
+6. Milyen hiányosságok vannak a klasszikus logikai következtetésben az emberi gondolkodáshoz képest?
+7. Probléma-dekompoziciós eljárás reprezentációja
+8. Definiálja a helyettesítést és az egyesíto helyettesítést!
+9. Milyen okai vannak a rezoluciós eljárás nemdeterminisztikusságának.
+10. Hogyan készítheto gráfreprezentáció az elore és visszafelé haladó szabályalapú reprezentációhoz?
+
+090603
+1. Adja meg az általános keresorendszer algoritmusát!
+2. Milyen feltételek mellett terminál, és talál megoldást a visszalépéses keresés elso változata?
+3. Milyen feltételek mellett talál megoldást az általános gráfkereso algoritmus?
+4. Milyen okok akadályozzák egy probléma dekompoziciós reprezentációjának megfogalmazását?
+5. Hogyan ábrázolható a nyero stratégia a kétszemélyes játékok gráfreprezentációjában?
+6. Írja fel az evolúciós algoritmus általános sémáját!
+7. Melyek klóz-formára hozás lépései az elsorendu predikátumkalkulusban?
+8. Adja meg a támasztó halmaz stratégia és a lineáris input stratégia meghatározását. Teljesek-e ezek a stratégiák?
+9. Jellemezze a visszafele haladó szabályalapú reprezentáció formuláinak alakját!
+10. Ismertesse, hogy milyen megoldásokat tanult a nem-monoton következtetés területén a hiányos axióma rendszer 
+    illetve az ellentmondásos axióma rendszer kezelésére!
+
+100609
+1. egy probléma állapotterét hogyan valósítjuk meg gráfreprezentációval
+2. a visszalépéses keresés 2-es változata milyen gráfban terminál és mikor megoldással
+3. milyen nem informált gráfkereséseket ismer. definiálja ezeket feltételzve, hogy ismerjük a gráfkeresés alg-t.
+4. definiálja az ÉS\VAGY gráfot
+5. ismertesse a minimax algoritmust
+6. milyen szempontokat kell figyelembe venni az evoluciós algoritmus kiválasztó operátorának konstruálásakor
+7. erre nem emlékszem rendesen de talán: írja le az egyesítést
+8. ismertesse az egységklóz / támasztóhalmaz stratégiát. teljesek-e ezek?
+9. + 10. sajnálom de nem emlékszem
+
+110524
+1. Nevezze meg és jellemezze a kereso rendszerek fo részeit!
+2. Melyek a visszalépés feltételei a visszalépéses algoritmus legáltalánosabb változatában?
+3. Mikor nevezünk egy gráfkereso algoritmust A* algoritmusnak, és melyek ennek legfobb jellemzoi?
+4. Mit jelent kétszemélyes játékoknál a nyero stratégia, és milyen állítást mondtunk ki ezzel kapcsolatban?
+5. Mi történik (milyen lépések hajtódnak végre) egy evolúciós algoritmus egy iterációja során?
+I. Adjon állapottér-reprezentációt a 8-as kirakó játékra! (Egy 3×3-as keretben 8 darab 1×1-es 
+méretu 1-tol 8-ig megszámozott lapocska található és egy üres hely. Egy lapocskát a kereten belül 
+a vele szomszédos üres helyre el lehet tolni. Egy megadott kezdoállásból elindulva rendezzük át a 
+lapocskákat úgy, hogy középen legyen az üres hely, a lapocskák pedig az óra járásával megegyezo 
+irányban legyenek megszámozva a bal felso saroktól indulva.)
+II. "Aki sokat iszik, annak remeg a keze. Akinek remeg a keze, az sok italt kilötyköl a poharából. 
+Aki sok italt kilötyköl a poharából, az keveset iszik. Lássuk be, hogy aki sokat iszik, az keveset iszik!"
+Formalizálja a fenti mondatokat, adjon szabályalapú reprezentációt erre a problémára, majd alakítsa át 
+klóz alapú reprezentációra, és oldja meg rezolúcióval!
+
+110526
+1, vezérlési stratégiák osztályzása
+2, visszalépéses keresés elonyei/hátrányai
+3, A^{c} milyen gráfkereso és mi jellemzo rá (vagy valami hasonló)
+4, ÉS/VAGY gráf def
+5, hogy néz ki egy perceptron
+F1 n-királyno probléma reprezentációja
+F2 visszalépéses keresésén alapuló gráfos feladat
+
+110531
+1) Jellemeze a problémás és a tabu keresés által adott megoldást.
+2) visszalépéses keresés globális munkaterülete, keresési szabálya, vezérlési stratégiája.
+3) Milyen eredményeket mondtunk ki az általános gráfkereso algoritmusról?
+4) mi az a hiperút?
+5) Milyen a jó szelekciós operátor? Adjon egy példát rá!
+F1) Adjon állapottér-reprezentációt kielégíthetoségi problémára: Adott egy n darab ítéletváltozó 
+    (logikai értéku változó) segítségével felírt nulladrendu logikai formula. A változók milyen értéke 
+    mellet lesz a formula igaz? Próbálja megbecsülni egyfelol az ön által adott állapottér méretét, 
+    másfelol a problématér méretét (a muveletek által kijelölt startcsúcsból kiinduló lehetséges utak száma)!
+F2) egy megadott fiktív játékfa kiértékelése minimax algoritmussal, mi a soron következo játékos lépése
+
+100603
+1. Milyen hatással van a heurisztika általában a kereso rendszerek muködésére?
+2. Írja le a hegymászó algoritmust!
+3. Mit tesz az általános gráfkereso algoritmus akkor, amikor egy már korábban felfedezett csúcshoz talál minden addiginál olcsóbb utat?
+4. Mit tartalmaz egy probléma dekompozíciós reprezentációja?
+5. Adjon példát legalább három rekombinációs operátorra!
+I.  Adjon állapottér reprezentációt a Hanoi-tornyai problémára! (stb. stb.)
+II. A boszorkányok mindenkit elbájolnak, akik nem bájolognak, ám a bájolgókat ok sem bájolják el. 
+(Bájolgó az, aki saját magát elbájolja.) Bizonyítsa be ezek alapján -REZOLÚCIÓVAL- Könyves Kálmán 
+királyunk híres mondását: "Boszorkányok pedig nincsenek!" Adja meg a formulákat, utána a kiinduló 
+klúzokat, végül a rezolúciós levezetést! Használja a V(x,y) szimbólumot annak jelölésére, hogy x 
+elbájolja y-t, és a V(x,x)-et arra, hogy x bájolog, azaz magát bájolja el.
+
+https://immanuel60.hu/mesterseges-intelligencia-elte-mi/
+
+120523
+1. Nevezze meg és jellemezze a keresőrendszerek fő részeit.
+2. Melyek a visszalépés feltételei a visszalépéses algoritmus legáltalánosabb változatában?
+3. Mikor Nevezünk egy gráfkereső algoritmust A* algoritmusnak és mit tudunk ennek az eredményességéről.
+4. Mit jelent kétszemélyes játékoknál a nyerő stratégia és milyen állítást mondtunk ki ezzel kapcsolatban.
+5. Mi történik egy evoluciós algoritmus egy iterjációja során (milyen lépések hajtódnak végre)
+I. Állapottér reprezentáció utazó ügynökre (n darab város) és becsülje meg az állapottérnek és problématérnek a méretét.
+II. Hegymászó algoritmus Hanoi torony rep. gráfjában(ami a diákon is van) adott heurisztika mellett sum(i=0-tol 3-ig) i*v(i), ha két csucs kozott nem dont heurisztika akkor a baloldali csúcsot részesítsük előnyben.
+
+120530
+1. Osztályozza a vezérlési stratégiákat
+2.Melyek a visszalépéses keresés előnyei hátrányai
+3. Mikor nevezünk egy gráf kereső algoritmust A^c algoritmusnak, és melyek a legfőbb tulajdonságai
+4. És/Vagy gráf
+5. Hogyan néz ki egy általánosított perceptron, és hogyan számolja ki a kimeneti értéket
+I. Állapottár reprezentáció n királynő
+II. Visszalépésés keresés lejátszása egy gráfon, mennyi visszalépés volt, mi a megoldási út, számozoni kellett bejárás szerinti sorrendbe, és x-el jelölni azokat a csúcsokat ahol volt visszalépés
+
+120606
+1. Milyen eredményre képes a visszalépéses keresés első, illetve második változata?
+2. Mikor nevezünk egy gráfkereső algoritmust szélességi keresésnek? Milyen állítást mondhatunk ki vele kapcsolatban?
+3. Sorolja fel, milyen módosításait ismerte meg a minimax algoritmusnak, és írja melléjük, hogy ezek milyen szempontból javítanak annak működésén?
+4. Hogyan történik az evolúciós algoritmusokban a visszahelyezés?
+5. A rezolúció módszere egy speciális kereső rendszer. Írja le, hogy ebben az esetben mik lesznek a keresőrendszer fő részei!
+I. Állapottér repr. a misszionárius – kannibál problémára
+II. (2,2) átlagoló eljárás egy adott játékfára. Soron következő lépés.
+
+120613
+1. Melyik problémáját küszüböli ki a tabu keresés a hegymászó módszernek + probléma jellemzése + tabu megoldásának jellemzése
+2. Visszalépéses ker. munkaterülete, keresési szabályai, vezérlési stratégia
+3. Általános gráf ker. eredményei
+4. Mi a hiperút
+5. Mikor jó egy szelekció? + példa
+I. Állapottér rep. SAT problémára
+II. Minimax
+
+120620
+1. Milyen hatással van a heurisztika általában a kereső rendszerek működésére?
+2. Írja le a hegymászó algoritmust!
+3. Mit tesz az általános gráfkereső algoritmus akkor, amikor egy már korábban felfedezett csúcshoz talál minden addiginál olcsóbb utat?
+4. Mit tartalmaz egy probléma dekompozíciós reprezentációja?
+5. Adjon példát legalább három rekombinációs operátorra!
+I. Fekete-fehér kirakó állapottér-reprezentációja. Problématér és állapotér méretének becslése.
+II. Szemléltesse az A algoritmus működését! (Megvolt adva egy gráf, egy hisztogram, egy táblázat. A hisztogramot és a táblázatot kellett megfelelően kitölteni)
+
+https://elte.sharq.hu/uploads/1358806005mi20130108.txt
+
+130108
+1. Tabu keresés algoritmusa
+2. Hiperút bejárásnak fogalma
+3. Mit jelent a felügyelt és felügyelet nélküli tanulás a perceptron modellben?
+4. Mikor nevezünk egy algoritmust A algoritmusnak? Milyen állításokat fogalmaztunk meg róla?
+5. Herurisztikák csoportosítása visszalépéses keresésnél, példák
+F1, Kancsók problémájának állapottér-reprezentációja
+F2, Megadott irányított gráfon alfa-béta keresés
+
+[PDF A MAPPÁBAN]
+
+130122 (pdf a mappában)
+1, Melyik problémáját küszöböli ki a tabu keresés a hegymászó módszernek. Jellemezze a problémát, és a tabu keresés által adott megoldást. (6p) 
+2, Mi a visszalépéses keresés globális munkaterülete, melyek a keresési szabályok, és mi a vezérlési stratégia? (6p) 
+3, Milyen eredményeket mondtunk ki az általános gráfkereső algoritmusról? (6p) 
+4, Mi a hiperút? (6p) 
+5, Mire jó a szelekciós operátor? Adjon két példát is rá! (6p) 
+I, Adjon állapottér reprezentációt a kielégíthetőségi (SAT) problémára. Becsülje meg az állapottér, és problématér méretét!(15p) 
+II. Keressen az alábbi gráfban megoldási utat a visszalépéses kereséssel. Az azonos szinten lévő csúcsok közül balról jobbra sorrend szerint válasszon. Sorszámozással jelölje, hogy egy-egy lépésben épp melyik csúcs a nyilvántartott útvonal utolsó eleme. X-el jelölje azokat a csúcsokat, ahonnan visszalépett. Hány visszalépés után terminál az algoritmus? Mi a talált megoldási út? [ÁBRA HOZZÁ A PDFBEN]
+
+https://elte.sharq.hu/uploads/1421347960mi-2015januar.txt
+
+14151
+2 MI vizsga feladati 15 jan.-ból: (nem teljes, csak ennyit tudtam összeszedni, 6 elméleti kérdés van 1 vizsgán és 3 gyak feladat)
+gyakfeladatok:
+negamax alg egy példagráfon
+visszalépés labirintusban
+b algoritmus 1 grááfon
+visszalépés 1 gráfon
+kockapaoklgatás egy asztalon a-b-c kockák x-y-z helyek és egy robotkarral kellett pakolni hogy vmelyik helyen abc kockák legyenek egymáson ebben a sorrendben - aszem :D
+elmélet:
+milyen modellezési szarokat vettünk a félév során
+szelekció és arra 3 példa hogy mire használtuk - vmi ilyesmi
+vmi rezolúciós levezetés leírása
+visszalépéses keresés leírása és heurisztikái
+általános gráfkereső algoritmus
+rezolúció másodlagos stratégiái
+és/vagy fát mire használtuk a félév során
+
+https://www.facebook.com/groups/elteikbsc/permalink/799487950147184/
+
+150528
+Elmélet:
+1) Elsődleges vezérlési stratégia osztályozása, jellemzése
+2) Probléma dekompozíció gráfreprezentációját összehasonlítani a visszafelé haladó kereséssel
+3) Evolúciós algoritmus lépései és jellemzése, inicializálás, terminálás
+4) Nyerő stratégia és az állítások hozzá
+5) Mélységi bejárás összehasonlítása több szempont alapján a VL2-vel szemben (stratégia, bejárás sorrendje, futási idő, stb...)
+6) Felügyelt és felügyelet nélküli tanulás def + példák
+Gyakorlat:
+I) Állapottér reprezentáció: Tic Tac Toe
+II) 2-2 átlagoló kiértékelés
+III) A algoritmus egy megadott gráfon
+
+http://zyxon.github.io/pages/mi-vizsga.html
+
+150603
+elmélet:
+- Heurisztika, mire jó, KR-ben hol és mire használjuk?
+- Redukció és dekompozíció különbségei és hasonlóságai?
+- Minimax módosításainak felsorolása. Min javítanak ezek?
+- Szélességi és mélységi korlátos mélységi bejárás összehasonlítása.
+- Mi a nem-determinisztikus rezolúció?
+- Visszafelé haladó szabályalapú logikai reprezentáció, formai megszorításai.
+gyakorlat:
+- Állapottér reprezentáció: 3 kocka, 2 golyó, 1 robotkar, ami golyót mozgat dobozok között. Kezdetben X-ben A, Y-ban B golyó van, Z üres. Cél: X és Y tartalmának cseréje.
+- Adott gráfon visszalépéses keresés. (Sorszámozni az éppen aktuális csúcsot [egy csúcsnál több sorszám is lehet], X-szel jelölni azokat a csúcsokat, ahonnan visszalép, megadni a visszalépések számát és a végeredmény utat.
+- Adott ÉS/VAGY gráfból közönséges irányított gráfot készíteni.
+
+https://www.facebook.com/groups/elteikbsc/permalink/994158177346826/
+
+160520
+Elméleti kérdések:
+1. Mik azok az elsődleges, másodlagos és heurisztikus vezérlési stratégiák? Adjon mindegyikre példát a tanultak alapján!
+2. Adjon példát arra, amikor az állapottér megegyezik a problématérrel, és arra, amikor nem. Indokolja választását!
+3. Mikor veszítheti el a gráfkeresés során a feszítőfa a korrektséget? Milyen megoldási módszerek léteznek erre a problémára, és mi melyiket választottuk?
+4. Mi az a perceptron modell és milyen feladatok megoldására használható?
+5. Mi a feladata a szelekciónak, rekombinációnak, és mutációnak az evolúciós algoritmusokban?
+Gyakorlati feladatok:
+1. Adott a Hanoi-tornyai reprezentációs gráf. Startcsúcs: (2,1,3), célcsúcs: (1,1,1). Tabu keresést használva írja a csúcsok mellé a sorrendjüket (a startcsúcs a 0. és egy csúcs több sorszámot is kaphat). A kiértékelő függvény sum(i=1..3) v[i]. (Hasonló értékű csúcsok esetén az ábrázolás szerinti jobb oldali csúcsot válasszuk.) Adjon meg minél kisebb elemszámot a tabuhalmaznak, amivel még terminál az algoritmus.
+2. Adott egy játékfa részlet, ami a soron következő játékos által kiértékelt leveleket tartalmazza. Alfa-béta algoritmust használva határozza meg a soron következő játékos következő lépését. Írja a csúcsok mellé az ideiglenes értékeit és karikázza be a végleges, felfuttatott értékeket.
+
+https://www.facebook.com/groups/elteikbsc/permalink/1015159421913368/
+
+160622
+elméleti:
+1, össze kellett hasonlítani a lokális ker. , visszalépéses és gráfker. globális munkaterület, keresési szabály és vezérlési stratégia alapján.
+3. ÉS/VAGY gráf
+X. optimális útkeresési problémákkal kapcsolatban tanult algoritmusok felírása.
+Y. hegymászó algoritmus és tabu keresés közti különbség
+(X,Y eleme a nem emlékszem hányadik volt halmaznak)
+gyakorlati:
+1. VL2 hanoi tornyain
+2. alfa-béta
+
+https://www.facebook.com/groups/ELTE.IK.TKK/permalink/1405285256162323/
+
+16171 2. vizsga
+Első rész:
+1, Elsődleges vezérlési stratégia, csoportosítási szempontok, melyek tartoznak bele.
+2, Mi a nyerési stratégia, tétel zéró összegű kétszemélyes játék esetén.
+3, Különbözó szempontok szerint visszalépéses és gráfkeresés összehasonlítása.(futási idő,tárterület,vezérlési stratégia,keresési szabály,eredmény stb)
+4, Dekomponálás reprezentációja, minek felel meg egy probléma dekomponálása.(kb., ÉS/VAGY gráf volt a lényeg)
+5, Minimax algoritmus módosításai, mit javítanak ezek.
+6, Írd le az evolúciós algoritmust. Mi lehet a terminálási feltétel?
+Második: 
+1, Visszalépéses keresés gráfon
+2, Rezolúcióval bizonyitsd be, hogy...,vagy szabály alapú következtetéssel. (klózok kreálása, üres klóz levezetése stb)
+akinek van macskaja nincs egere
+Aki itatja az egereket annak van egere
+Van olyan aki szereti az egerekeet
+Es biz
+Vannolyan akinek van macskaja es szereti az egereket
+És meg volt adva az állításoknak megfelelő logikai kifejezés.
+
+https://www.facebook.com/groups/elteikbsc/permalink/1194214674007841/
+
+170110
+gyakorlati
+Az egyik az a gráfkeresős feladat, heurisztikával megjelölt csúcsokkal, alatta egy táblázat és egy ilyen grafikon az f értékek ábrázolásához.
+A másik az egy két személyes gráf súlyozós játék, 2-2 átlagolás.
+
+https://www.facebook.com/groups/elteikbsc/permalink/1522850441144261/
+
+16172
+Amikor én vizsgáztam a hat tétel kérdésből kettő az oldalon lévő minta inverze volt, szóval ha a mintát tudtad akkor a vizsgának azt a két kérdését is.
+A lejátszós feladat alfabéta és tabu alg volt nekünk, kábé akkora példa mint a slideokban van.
+
+https://www.facebook.com/groups/elteikbsc/permalink/1328270870602220/
+
+170525
+Elmélet:
+- az első három evolúciós operátor mire való
+- mondj egy olyan algoritmust, aminek ugyanaz az állapottere és a problématere és egyet, aminek nem + indoklás
+- szabályalapú következtetésnél mit jelent az előrefelé és a hátrafelé láncolás
+- mi az a vezérlési stratégia, mi a különbség az elsőrendű, másodrendű és a heurisztikus között + példa mindre
+- milyen probléma merül fel, ha a gráfkeresés egy olyan csúcshoz talál minden eddiginél olcsóbb utat, ami már benne volt a részgráfban, milyen módokon lehet ezt megoldani és mi melyiket választottuk
+- mit jelent kétszemélyes játékoknál a nyerő stratégia és milyen állítást tudunk kimondani a kétszemélyes kétesélyes zéró összegű játékokról
+Gyakorlati rész:
+- tabu algoritmussal kellett végigmenni a hanoi tornyai gráfon úgy, hogy minél kisebb legyen a tabu halmaz mérete és mégis termináljon
+- egy játékgráfot egészíts ki alfa-béta algoritmussal, melyik lépést javaslod a soron következő játékosnak, hol lehet vágni stb.
+
+https://www.facebook.com/groups/elteikbsc/permalink/1347581155337858/
+
+170608
+- tabu algortimusa
+- hegymászó algoritmus hátrányai, mivel javítunk rajta
+- mi a heurisztika, miért és mikor használjuk
+- A*, Ac és B algoritmus futásideje
+- mi a hiperút és annak bejárása
+- Mit kell megadni egy probléma redukciós reprezentációjához?
+a gyakorlati részen pedig
+- az A algoritmus működését kellett szemléltetni (táblázatos)
+- valamilyen átlagoló algoritmust egy gráfra
+
+https://www.facebook.com/groups/ELTE.IK.TKK/permalink/1587319064625607/
+
+170623
+elmélet:
+1. keresőrendszer részei, általános algoritmus
+2. kapcsolat az útkeresési problémák, a gráfreprezentáció és a keresőalgoritmusok között
+3. melyik keresőalgoritmusoknál jelenik meg a véletlenszerűség és mire használtuk?
+4. mi a lényege a visszafele haladó keresésnek és mik a feltételei?
+5. jobban informáltság fogalma; mi köze a gráfalgoritmusok hatékonyságához?
+6. VL1 algoritmusa
+gyakorlat:
+1. A algoritmus egy gráfon
+2. rezolúció elsőrendben (valami Garfield macskás)
+
+https://www.facebook.com/groups/elteikbsc/permalink/1696382523791051/
+
+180524
+elmélet:
+1. vezérlési startégia, a három típusa, példával
+2. állapottér megegyezik a problématérrel és nem, erre példa és indoklás
+3. gráfkeresésnél mi történik ha olcsóbb utat talál (vagy valami ilyesmi)
+4. győztes stratégia
+5. szelekció-rekombináció-mutáció
+6. felügyelt tanulás 3 fajtájához kérdés
+feladatok:
+1. tabu keresés hanoi tornyain
+A [2,1,3]-ban volt a start, a cél pedig az [1,1,1].
+A három érték összege alapján kellett dönteni a csúcsok között, mindig a kisebb felé haladva.
+A tabu halmazt nekünk kellett meghatározni, az volt a feltétel, hogy a lehető legkisebb legyen, de még eljussunk a célba.
+2. alfa-béta
+
+180604
+elmélet:
+1. heurisztika micsoda, hol és hogyan hat a keresőrendszer működésére
+2. mit kell megadni egy probléma dekompozíciós reprezentációjához
+3. hegymászó módszer hátrányai, megoldások az enyhítésére
+4. a*, a c, b algoritmusok futási idejének jellemzése
+5. hiperút micsoda, bejárása
+6. knn módszer, célja, hogyan éri el a célt
+gyakorlat:
+1. a algoritmus gráfon (elég hasonló volt a csoportban megtalálható kb 2016os vizsgáéhoz)
+2. 2-2 átlagoló kiértékelés
+
+180607
+elmélet:
+1. k-means algoritmus hol használják hogy működik
+2. gráfkereseknek mitől függ a memóriaigénye és futási sebessége
+3. szimulált hűtés algoritmusát leírni
+4. szélességi és mélységi gráfkeresést összehasonlítani egy táblázatban megadott szempontok alapján
+5. mi a másodlagos vezérlési stratégia, és például hol vettünk ilyet
+6. mit reprezentála játékfa és az és vagy gráf a 2 személyes játékoknál
+gyakorlat
+1. visszalépéses keresés hasonló mint a mintavizsgában,
+2. negamax algoritmus, olyan gráfban aminek min szinten is vannak levélcsúcsai és további elágazódásai vegyesen
+
+180614 (nem sorrendben)
+elmélet:
+1. alfa béta
+2. nem felügyelt tanulás
+3. általános kereső rendszer algoritmusa
+4. valami olyasmi, hogy kapcsolat az útkeresés és a modellezés között
+5. valamilyen evolúciós kérdés, meg A* memória igénye
+6. mit jelent, hogy egyik heurisztika jobban informált, mint a másik
+gyakorlati:
+1. martelli biztosan volt, A* algoritmussal, működési gráf és táblázat
+2. Hanoi állapotgráfjának bejárása VL2-vel 4-es mélységi korláttal
+
+180618
+elmélet:
+1. Visszalepeses, lokalis, grafkereses tablazatban: globalis munkaterulet, keresesi szabaly, vezerlesi strategia
+2. Nem informalt keresesek definialasa
+3. B algoritmus
+4. Hegymaszo, tabu: elony hatrany
+5. Hol voltak veletlenszeru algoritmuaok
+6. Asszem Neuralis halo
+Gyak:
+1. A algoritmus kb ugyanaz mint az animacioja
+2. Visszalepeses hanoi tornyan 5 melyesegi korlattal sum i=1..3 : i*v[i]
+
+180621
+elmélet:
+1. kereső rendszerek általános algoritmusának fő részei
+2. általános gráfkereső algoritmus
+3. mikor terminál és mikor ad megoldást a visszalépéses keresés 1. illetve 2. változata
+4. útkeresési problémára optimális megoldási utat adó algoritmusok felsorolása
+5. hol használunk kiválasztást evolúciós algoritmusokhoz, célja, módszerekre példa
+6. RF módszer, célja, hogyan éri el a célt
+gyakorlati:
+1. egyenletes algoritmus
+2. állapottér-reprezentáció
+X, Y, Z dobozok
+A, B golyók
+robotkar 1 golyót tud áthelyezni nem üres dobozból egy másik üres dobozba
+kezdetben: X-ben A, Y-ban B, Z üres
+cél: X, Y tartalmának kicserélése
+benne(u, v) ~ u dobozban v golyó; üres(u) ~ u doboz üres -> ezeket lehetett használni ha akartad
+
+180628
+Elm:
+1. Minimax
+2. Binaris
+3. Modellkeszites
+4. Megengedo heurisztika v. Szig. Mon. Heur.
+5. Hegymaszo modszerrel mi a gond es h orvosolhato
+6. ?
+Gyak:
+1. B algo
+2. Visszalepeses kereses
+
+https://www.facebook.com/groups/elteikbsc/permalink/1015972348498742/
+egy gyakorlati feladat válasszal (rezolúció)
+https://www.facebook.com/groups/elteikbsc/permalink/1347748941987746/
+a algoritmus megoldás

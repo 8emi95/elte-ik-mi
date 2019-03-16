@@ -1,0 +1,168 @@
+110524
+- Adjon állapottér-reprezentációt a 8-as kirakó játékra! (Egy 3×3-as keretben 8 darab 1×1-es 
+méretu 1-tol 8-ig megszámozott lapocska található és egy üres hely. Egy lapocskát a kereten belül 
+a vele szomszédos üres helyre el lehet tolni. Egy megadott kezdoállásból elindulva rendezzük át a 
+lapocskákat úgy, hogy középen legyen az üres hely, a lapocskák pedig az óra járásával megegyezo 
+irányban legyenek megszámozva a bal felso saroktól indulva.)
+- "Aki sokat iszik, annak remeg a keze. Akinek remeg a keze, az sok italt kilötyköl a poharából. 
+Aki sok italt kilötyköl a poharából, az keveset iszik. Lássuk be, hogy aki sokat iszik, az keveset iszik!"
+Formalizálja a fenti mondatokat, adjon szabályalapú reprezentációt erre a problémára, majd alakítsa át 
+klóz alapú reprezentációra, és oldja meg rezolúcióval!
+
+110526
+- n-királyno probléma reprezentációja
+- visszalépéses keresésén alapuló gráfos feladat
+
+110531
+- Adjon állapottér-reprezentációt kielégíthetoségi problémára: Adott egy n darab ítéletváltozó 
+    (logikai értéku változó) segítségével felírt nulladrendu logikai formula. A változók milyen értéke 
+    mellet lesz a formula igaz? Próbálja megbecsülni egyfelol az ön által adott állapottér méretét, 
+    másfelol a problématér méretét (a muveletek által kijelölt startcsúcsból kiinduló lehetséges utak száma)!
+- egy megadott fiktív játékfa kiértékelése minimax algoritmussal, mi a soron következo játékos lépése
+
+120523
+- Állapottér reprezentáció utazó ügynökre (n darab város) és becsülje meg az állapottérnek és problématérnek a méretét.
+- Hegymászó algoritmus Hanoi torony rep. gráfjában(ami a diákon is van) adott heurisztika mellett sum(i=0-tol 3-ig) i*v(i), ha két csucs kozott nem dont heurisztika akkor a baloldali csúcsot részesítsük előnyben.
+
+120530
+- Állapottár reprezentáció n királynő
+- Visszalépésés keresés lejátszása egy gráfon, mennyi visszalépés volt, mi a megoldási út, számozoni kellett bejárás szerinti sorrendbe, és x-el jelölni azokat a csúcsokat ahol volt visszalépés
+
+120606
+- Állapottér repr. a misszionárius – kannibál problémára
+- (2,2) átlagoló eljárás egy adott játékfára. Soron következő lépés.
+
+120613
+- Állapottér rep. SAT problémára
+- Minimax
+
+120620
+- Fekete-fehér kirakó állapottér-reprezentációja. Problématér és állapotér méretének becslése.
+- Szemléltesse az A algoritmus működését! (Megvolt adva egy gráf, egy hisztogram, egy táblázat. A hisztogramot és a táblázatot kellett megfelelően kitölteni)
+
+130108
+- Kancsók problémájának állapottér-reprezentációja
+- Megadott irányított gráfon alfa-béta keresés
+
+130122
+- Adjon állapottér reprezentációt a kielégíthetőségi (SAT) problémára. Becsülje meg az állapottér, és problématér méretét!(15p) 
+- Keressen az alábbi gráfban megoldási utat a visszalépéses kereséssel. Az azonos szinten lévő csúcsok közül balról jobbra sorrend szerint válasszon. Sorszámozással jelölje, hogy egy-egy lépésben épp melyik csúcs a nyilvántartott útvonal utolsó eleme. X-el jelölje azokat a csúcsokat, ahonnan visszalépett. Hány visszalépés után terminál az algoritmus? Mi a talált megoldási út? [ÁBRA HOZZÁ A PDFBEN]
+
+14151 (2 db vizsga)
+- negamax alg egy példagráfon
+- visszalépés labirintusban
+- b algoritmus 1 grááfon
+- visszalépés 1 gráfon
+- kockapaoklgatás egy asztalon a-b-c kockák x-y-z helyek és egy robotkarral kellett pakolni hogy vmelyik helyen abc kockák legyenek egymáson ebben a sorrendben - aszem :D
+
+150528
+- Állapottér reprezentáció: Tic Tac Toe
+- 2-2 átlagoló kiértékelés
+- A algoritmus egy megadott gráfon
+
+150603
+- Állapottér reprezentáció: 3 kocka, 2 golyó, 1 robotkar, ami golyót mozgat dobozok között. Kezdetben X-ben A, Y-ban B golyó van, Z üres. Cél: X és Y tartalmának cseréje.
+- Adott gráfon visszalépéses keresés. (Sorszámozni az éppen aktuális csúcsot [egy csúcsnál több sorszám is lehet], X-szel jelölni azokat a csúcsokat, ahonnan visszalép, megadni a visszalépések számát és a végeredmény utat.
+- Adott ÉS/VAGY gráfból közönséges irányított gráfot készíteni.
+
+160520
+- Adott a Hanoi-tornyai reprezentációs gráf. Startcsúcs: (2,1,3), célcsúcs: (1,1,1). Tabu keresést használva írja a csúcsok mellé a sorrendjüket (a startcsúcs a 0. és egy csúcs több sorszámot is kaphat). A kiértékelő függvény sum(i=1..3) v[i]. (Hasonló értékű csúcsok esetén az ábrázolás szerinti jobb oldali csúcsot válasszuk.) Adjon meg minél kisebb elemszámot a tabuhalmaznak, amivel még terminál az algoritmus.
+- Adott egy játékfa részlet, ami a soron következő játékos által kiértékelt leveleket tartalmazza. Alfa-béta algoritmust használva határozza meg a soron következő játékos következő lépését. Írja a csúcsok mellé az ideiglenes értékeit és karikázza be a végleges, felfuttatott értékeket.
+
+160622
+- VL2 hanoi tornyain
+- alfa-béta
+
+16171 2. vizsga
+- Visszalépéses keresés gráfon
+- Rezolúcióval bizonyitsd be, hogy...,vagy szabály alapú következtetéssel. (klózok kreálása, üres klóz levezetése stb)
+akinek van macskaja nincs egere
+Aki itatja az egereket annak van egere
+Van olyan aki szereti az egerekeet
+Es biz
+Vannolyan akinek van macskaja es szereti az egereket
+És meg volt adva az állításoknak megfelelő logikai kifejezés.
+
+170110
+- gráfkeresős feladat, heurisztikával megjelölt csúcsokkal, alatta egy táblázat és egy ilyen grafikon az f értékek ábrázolásához.
+- két személyes gráf súlyozós játék, 2-2 átlagolás.
+
+170525
+- tabu algoritmussal kellett végigmenni a hanoi tornyai gráfon úgy, hogy minél kisebb legyen a tabu halmaz mérete és mégis termináljon
+- egy játékgráfot egészíts ki alfa-béta algoritmussal, melyik lépést javaslod a soron következő játékosnak, hol lehet vágni stb.
+
+170608
+- A algoritmus működését kellett szemléltetni (táblázatos)
+- átlagoló algoritmust egy gráfra
+
+170623
+- A algoritmus egy gráfon
+- rezolúció elsőrendben (valami Garfield macskás)
+
+180524
+- tabu keresés hanoi tornyain
+A [2,1,3]-ban volt a start, a cél pedig az [1,1,1].
+A három érték összege alapján kellett dönteni a csúcsok között, mindig a kisebb felé haladva.
+A tabu halmazt nekünk kellett meghatározni, az volt a feltétel, hogy a lehető legkisebb legyen, de még eljussunk a célba.
+- alfa-béta
+
+180604
+- a algoritmus gráfon (elég hasonló volt a csoportban megtalálható kb 2016os vizsgáéhoz)
+- 2-2 átlagoló kiértékelés
+
+180621
+1. egyenletes algoritmus
+2. állapottér-reprezentáció
+X, Y, Z dobozok
+A, B golyók
+robotkar 1 golyót tud áthelyezni nem üres dobozból egy másik üres dobozba
+kezdetben: X-ben A, Y-ban B, Z üres
+cél: X, Y tartalmának kicserélése
+benne(u, v) ~ u dobozban v golyó; üres(u) ~ u doboz üres -> ezeket lehetett használni ha akartad
+
+181218
+- tabu keresés
+- minimax
+
+190108
+- 2-2 átlagoló kiértékelés
+- A algoritmus, gráfon
+
+190115
+- visszalépéses keresés
+- állapottér-reprezentáció
+
+************************************************************************************************************************************
+
+// 2.
+hanoi
+n-királynő
+tologató
+dekompozíció
+
+// 3.
+lokális keresés
+hegymászó
+tabu
+szimulált hűtés
+fekete-fehér kirakó
+
+// 4.
+visszalépéses keresés
+vl1
+vl2
+
+// 5.
+gráfkeresés
+a algoritmus
+b algoritmus
+
+// 7.
+kétszemélyes játékok
+minimax
+átlagoló kiértékelés
+negamax
+alfa-béta
+
+// ???
+rezolúció

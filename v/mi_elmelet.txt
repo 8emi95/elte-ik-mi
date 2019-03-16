@@ -1,0 +1,152 @@
+[180524] vezérlési startégia, a három típusa, példával
+[150528] Elsődleges vezérlési stratégia osztályozása, jellemzése
+[160520] Mik azok az elsődleges, másodlagos és heurisztikus vezérlési stratégiák? Adjon mindegyikre példát a tanultak alapján!
+vezérlési stratégia
+- általános (elsődleges?): független a feladattól és annak modelljétől: nem merít sem a feladat ismereteiből, sem a modell sajátosságaiból.
+    - nemmódosítható:  lokális keresések, evolúciós algoritmus, (rezolúció?)
+    - módosítható: visszalépéses keresések, gráfkeresések
+- modell függő (másodlagos?): nem függ a feladat ismereteitől, de épít a feladat modelljének általános elemeire.
+    - (vl2?)
+- heurisztikus: feladattól származó, annak modelljében nem rögzített, a megoldást segítő speciális ismeret
+    - (a algoritmus?)
+//
+Elsődleges: pl. visszalépéses keresés
+Másodlagos: pl. Lineáris input stratégia (rezolúciónál)
+Heurisztika: pl. Manhattan-heurisztika (8-as játéknál)
+
+
+[180524] állapottér megegyezik a problématérrel és nem, erre példa és indoklás
+[160520] Adjon példát arra, amikor az állapottér megegyezik a problématérrel, és arra, amikor nem. Indokolja választását!
+megegyezik: n-királynő (A5-ön van királynő, az egy állapot, meg a problématér egy eleme is)
+nem egyezik: hanoi (2. rúdon van az állapot, problématér h hogyan jutottunk oda)
+//
+Szerintem algoritmusnak nincs állapottere, csak problémának, úgy pedig hanoi tornyai vs 8 királynő,
+mert a hanoi tornyainál az, hogy a 2. rúdon van 1 karika, az egy állapot,
+de a problématérbe meg az tartozna, hogy hogy jutottunk el oda.
+A 8 királynőnél meg a kettő ugyanaz. A5-ön van királynő, az egy állapot, meg a problématér egy eleme is
+// megegyezik
+Az n-királynőnek például, mert nem az út a lényeg, amit bejársz,
+hogy megtaláld a jó elrendezést, hanem magát a jó elrendezést akarod megtudni.
+Míg pl a Hanoi tornyainál tudod, hogy az (1,1,1)-be akarsz eljutni,
+ott az út számít, az utak alkotják a problémateret.
+
+
+[180524] gráfkeresésnél mi történik ha olcsóbb utat talál (vagy valami ilyesmi)
+[170525] milyen probléma merül fel, ha a gráfkeresés egy olyan csúcshoz talál minden eddiginél olcsóbb utat,
+ami már benne volt a részgráfban,
+milyen módokon lehet ezt megoldani és mi melyiket választottuk
+[120620] Mit tesz az általános gráfkereső algoritmus akkor,
+amikor egy már korábban felfedezett csúcshoz talál minden addiginál olcsóbb utat?
+Mi legyen az olcsóbb úton újra megtalált m csúcs leszármazottaival?
+1. Járjuk be és javítsuk ki a pointereiket és költségeiket!
+2. Kerüljük el egy jó kiértékelő függvénnyel, hogy ilyen történjen!
+3. Semmi mást ne tegyünk, csak legyen az m csúcs újra nyílt! 
+//
+- Egy GK kiértékelő függvénye csökkenő, amennyiben a egy csúcs kiértékelő függvény értéke
+az algoritmus működése során nem növekszik, viszont mindig csökken,
+valahányszor a korábbinál olcsóbb utat találunk hozzá.
+- Csökkenő kiértékelő függvény mellett a GK időről időre
+automatikusan helyreállítja a kereső gráf korrektségét,
+azaz a pi feszítő fájának optimálisságát és konzisztenciáját.
+
+
+[180524] győztes stratégia
+[170525] mit jelent kétszemélyes játékoknál a nyerő stratégia és
+milyen állítást tudunk kimondani a kétszemélyes kétesélyes zéró összegű játékokról
+[150528] Nyerő stratégia és az állítások hozzá
+- Egy játékos nyerő stratégiája egy olyan elv,
+amelyet betartva az ellenfél minden lépésére tud
+olyan választ adni, hogy megnyerje a játékot. 
+- A nyerő stratégia NEM egyetlen győztes játszma,
+hanem olyan győztes játszmák összessége, amelyek közül az egyiket
+biztos végig tudja játszani az a játékos,
+aki rendelkezik a nyerő stratégiával. 
+- Hasznos lehet a nem-vesztő stratégia megtalálása is,
+ha döntetlent is megengedő játéknál nincs győztes stratégia. 
+- Általános zéró összegű játékoknál beszélhetünk
+adott hasznosságot biztosító stratégiáról. 
+
+
+
+[180524] szelekció-rekombináció-mutáció
+
+
+
+[180524] felügyelt tanulás 3 fajtájához kérdés
+
+
+[170623] keresőrendszer részei, általános algoritmus
+Globális munkaterület: tárolja a keresés során megszerzett és megőrzött ismeretet (azaz egy részgráfot)
+Vezérlési stratégia: Végrehajtható szabályok alapján kiválaszt egy megfelelőt (álalános elv + heurisztika)
+Keresési szabályok: Megváltoztatják a globális munkaterület tartalmát (előfeltétel és hatás)
+Keresőrendszer általános algoritmusa:
+    public Data KR (Data start){
+      Data data = start;
+
+      while(!terminate(data)){
+        Rule r = rules.getApplicableRule(data);
+        data = r.apply(data);
+      }
+
+      return data;
+    }
+
+
+[170623] melyik keresőalgoritmusoknál jelenik meg a véletlenszerűség és mire használtuk?
+szimulált hűtés
+A keresési szabály a következő csúcsot véletlenszerűen választja ki az aktuális (akt) csúcs gyermekei közül.
+Ha az így kiválasztott új csúcs kiértékelő függvény-értéke nem rosszabb,
+mint az akt csúcsé (itt f(új) ≤ f(akt)), akkor elfogadjuk aktuális csúcsnak
+Ha az új csúcs függvényértéke rosszabb (itt f(új) > f(akt)), akkor egy olyan véletlenített módszert alkalmazunk,
+ahol az új csúcs elfogadásának valószínűsége fordítottan arányos az |f(akt) - f(új)| különbséggel:
+
+
+[170608] hegymászó algoritmus hátrányai, mivel javítunk rajta
+A hegymászó algoritmus lokális optimum hely körül,
+vagy ekvidisztans felületen lévő körön végtelen működésbe eshet.
+Ezt küszöböli ki a tabu keresés.
+//
+Csak erős heurisztika esetén lesz sikeres: különben „eltéved” (nem talál megoldást),
+sőt zsákutcába kerülve „beragad”.
+Segíthet, ha: 
+- véletlenül választott startcsúcsból újra- és újraindítjuk 
+- k aktuális csúcsnak a legjobb k gyerekére lépünk 
+- gyengítjük a mohó stratégiát -> szimulált hűtés
+Lokális optimum hely körül vagy ekvidisztans felületen (azonos értékű szomszédos csúcsok között)
+található körön, végtelen működésbe eshet. Segíthet, ha: 
+- növeljük a memóriát -> tabu keresés
+
+
+[170608] mi a heurisztika, miért és mikor használjuk
+Feladattól származó, annak modelljében nem rögzített, a megoldást segítő speciális ismeret.
+Közvetlenül építjük be az algoritmusba, hogy annak hatékonysága és eredményessége javuljon, 
+habár erre semmiféle garanciát nem nyújt. 
+A hatékonyság növelése alatt a memóriaigény és a futásidő csökkentését értjük.
+
+
+[190108] k means
+[190108] visszalépés feltételei
+[190108] mit kell megadni a dekompozíciós reprezentációhoz
+[190108] hegymászó hátrányai, hogyan javíthatjuk őket
+
+190115
+- általános vezérlési stratégiákat hogyan ozstályozzuk, példa egyes vezérlési stratégiákat tartalmazó algoritmusra
+- mi a probléma dekompozícióval megoldott problémák gráfreprezentációjával, mi szimbolizálja ebben a gráfban a probléma megoldását
+- visszalépéses keresés vs általános gráfkeresés (munkaterület, keresési szabály, vezérlés, milyen feltételek mellett ad meo-t, tárigény, futási idő)
+- minimax módosításaiként bevezetett algoritmusok felsorolása, melyik milyen tulajdonságát javítja a minimaxnak
+- evolúciós algoritmus, (pszeudo-kód), mi szokott lenni a terminálás feltétele
+- gépi tanulás részterületei, rövid jellemzés és alapvető különbségek
+
+181218
+- Kereső rendszer általános algoritmusa, jellemzése
+- VL2 algoritmusa
+- Mi a szelekció, milyen a jó szelekció, típusai
+- Paraméteres leképzés és optimalizálási módszer összehasonlító táblázata
+
+180621
+1. kereső rendszerek általános algoritmusának fő részei
+2. általános gráfkereső algoritmus
+3. mikor terminál és mikor ad megoldást a visszalépéses keresés 1. illetve 2. változata
+4. útkeresési problémára optimális megoldási utat adó algoritmusok felsorolása
+5. hol használunk kiválasztást evolúciós algoritmusokhoz, célja, módszerekre példa
+6. RF módszer, célja, hogyan éri el a célt
